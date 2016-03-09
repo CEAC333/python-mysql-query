@@ -12,7 +12,7 @@ cursor = db.cursor()
 query = cursor.execute(sql)
 results = cursor.fetchall()
 
-f = open('emails-all-active.csv', 'w')
+f = open('outfile.txt', 'w')
 for r in results:
     f.writelines('{}\n'.format(r[0]))
 f.close()
