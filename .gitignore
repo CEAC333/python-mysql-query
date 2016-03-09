@@ -1,0 +1,7 @@
+*~
+*.sw[op]
+.idea/
+
+__pycache__/
+*.txt
+config.py
