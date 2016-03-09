@@ -3,5 +3,8 @@
 .idea/
 
 __pycache__/
+
+*.csv
 *.txt
+
 config.py
