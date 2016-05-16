@@ -12,7 +12,11 @@ cursor = db.cursor()
 query = cursor.execute(sql)
 results = cursor.fetchall()
 
+print('Starting...')
 f = open('outfile.txt', 'w')
 for r in results:
-    f.writelines('{}\n'.format(r[0]))
+    current_datum = r[0]
+    f.writelines('{}\n'.format(current_datum))
+    print('Wrote: {}'.format(current_datum))
 f.close()
+print('Done.')
